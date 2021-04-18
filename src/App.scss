@@ -1,0 +1,36 @@
+.App {
+  text-align: center;
+  background: url('./assets/images/bg.png') #fafafa;
+  max-width: 1124px;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+
+:root {
+  --main-color : #ffc500;
+  --grey: #333333;
+  --lightgrey: #7F7F7F;
+  --verylightgrey: #fafafa;
+}
+
+.container_shadow {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active{
+  text-decoration: none;
+}
+
+@import 'assets/styles/_mixins.scss';
+@import 'assets/styles/_profile.scss';
+@import 'assets/styles/_timeline.scss';
+@import 'assets/styles/_header.scss';
+@import 'assets/styles/_footer.scss';
+@import 'assets/styles/_main.scss';
+@import 'assets/styles/_resume.scss';
+@import 'assets/styles/_portfolio.scss';
+@import 'assets/styles/_contact.scss';

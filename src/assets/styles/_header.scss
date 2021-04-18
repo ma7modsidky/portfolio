@@ -1,0 +1,99 @@
+.header {
+    header {
+        background: white;
+        color: var(--grey);
+        padding: 0;
+        border-radius: 5px;
+        
+    }
+    
+
+    .MuiToolbar-root{
+        padding: 0;
+        align-items: stretch;
+        justify-content: space-between;
+        min-height: 50px;
+    
+    }
+
+    .header_left{
+        display: flex;
+
+        button {
+            background-color: var(--main-color);
+            height: 100%;
+        }
+
+    }
+    .header_right {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        button {
+            border-radius: 50px;
+            padding: 0.5rem 0.8rem !important;
+             @include breakpoint-down(small) {
+                 display: none;
+             }
+        }
+
+        a{
+            @include breakpoint-down(medium) {
+                display: none;
+            }
+        }
+
+        a svg{
+            color: black;
+            font-weight: bold;
+            margin: 0 0.5rem;
+            width: 0.8em;
+            height: 0.8em;
+            &:hover{
+                color: var(--main-color);
+            }
+        }
+
+    }
+
+    button{
+        background-color: var(--main-color);
+        border-radius: 3px;
+        
+    }
+    .home_icon{
+        width: 3.5rem;
+    }
+
+    .header_links {
+        display: flex;
+        align-items: center;
+    }
+    .header_link {
+        font-weight: 500;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 0 10px;
+        line-height: 73px;
+        display: block;
+        color: black;
+        text-transform: uppercase;
+        
+        transition: 0.2s ease-in-out;
+        &:any-link{
+            text-decoration: none;
+        }
+        &:hover{
+            color: var(--main-color);
+        }
+
+        &.active {
+            color: var(--main-color);
+        }
+
+        
+    }
+
+
+}
