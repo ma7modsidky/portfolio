@@ -7,6 +7,7 @@ import Portfolio from './pages/Portfolio/Portfolio'
 import Resume from './pages/Resume/Resume'
 import Home from './pages/Home/Home'
 import Contact from './pages/Contact/Contact'
+import SettingsBox from './components/SettingsBox/SettingsBox';
 
 import {BrowserRouter as Router , Switch , Route} from 'react-router-dom'
 
@@ -16,6 +17,7 @@ import './App.scss';
 function App() {
   return (
     <div className="App">
+      <SettingsBox/>
       <Container>
         <Grid container spacing={3}>
           <Grid item xs={12} sm={8} md={4} lg={3} >

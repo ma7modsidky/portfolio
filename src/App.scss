@@ -34,3 +34,77 @@ a:active{
 @import 'assets/styles/_resume.scss';
 @import 'assets/styles/_portfolio.scss';
 @import 'assets/styles/_contact.scss';
+
+// @keyframes spin {
+//   from {
+//     transform: rotate(0deg);
+//   }
+
+//   to {
+//     transform: rotate(360deg);
+//   }
+// }
+// .settings {
+//   position: fixed;
+//   left: -200px;
+//   top: 50%;
+//   transform: translateY(-50%);
+//   width: 200px;
+//   background-color: white;
+//   z-index: 10;
+//   transition: 0.3s;
+//   color: #949494;
+//   padding: 0.5rem 1rem;
+//   box-sizing: border-box;
+//   border-radius: 5px;
+//   &.open {
+//     left: 0;
+//   }
+//   &_gear{
+//     position: absolute;
+//     right: -45px;
+//     background-color: white;
+//     top: 0;
+//     color: black;
+//     padding: 7px 10px;
+//     border-radius: 3px;
+
+//     svg{
+//       animation: spin 5000ms linear infinite ;
+//     }
+//   }
+
+  
+
+//   h4{
+//     color: var(--grey);
+//     text-transform: uppercase;
+//     padding: 0.5rem;
+//     border-bottom: 1px solid var(--lightgrey);
+//   }
+
+//   &_colors {
+//     padding: 0.5rem;
+//     width: 80%;
+//     margin: auto;
+//     border-bottom: 1px solid var(--lightgrey);
+
+//     .color_box{
+//       display: inline-block;
+//       padding: 5px;
+//       width: 10px;
+//       height: 10px;
+//       margin: 5px;
+//       cursor: pointer;
+//       opacity: 0.7;
+//       border-radius: 50%;
+//       &.active{
+//         opacity: 1;
+//       }
+//     }
+//   }
+
+//   button{
+//     margin-top:1rem;
+//   }
+// }

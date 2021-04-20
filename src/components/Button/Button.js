@@ -10,13 +10,14 @@ const useStyles = makeStyles((theme) => ({
 }}));
 
 
-export default function CustomButton({text, icon}) {
+export default function CustomButton({text, icon, click}) {
     const classes = useStyles();
     return (
        <Button
         variant="contained"
         className={classes.button}
         startIcon={icon}
+        onClick={click}
       >
         {text}
       </Button>
