@@ -15,8 +15,8 @@ const portfolioData = [
             image: ecommerce,
             description:'online shop site created with django3 and template engine',
             links:[
-                {link:'http://ma7modsidky.pythonanywhere.com/en/',},
-                {link:'https://github.com/ma7modsidky/Ecommerce_Django', icon:<GitHubIcon />},
+                {name:'live preview', link:'http://ma7modsidky.pythonanywhere.com/en/',},
+                {name:'Github', link:'https://github.com/ma7modsidky/Ecommerce_Django', icon:<GitHubIcon />},
             ]
         },
         {
