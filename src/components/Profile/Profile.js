@@ -23,7 +23,7 @@ function Profile() {
                 <CustomTimeline title={''} icon={<PermIdentityIcon/>}/>
                 <div className="profile_social">
                     {Object.keys(profileData.socials).map((key,index) => (
-                <a href={profileData.socials[key].link} key={index}>
+                <a href={profileData.socials[key].link} key={index} target='_blank' rel="noreferrer">
                     {profileData.socials[key].icon}
                 </a>
                 ))}

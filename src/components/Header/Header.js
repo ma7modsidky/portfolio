@@ -46,7 +46,7 @@ export default function Header() {
                 {profileData.socials[key].icon}
               </a>
             ))}
-            <CustomButton text='Hire ME' className='hireMe' icon={<SendIcon />} />
+            <CustomButton text='Hire ME' className='hireMe' icon={<SendIcon />} link='mailto:ma7mod_a@live.com'/>
           </div>
         </Toolbar>
       </AppBar>

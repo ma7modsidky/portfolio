@@ -12,11 +12,12 @@ import { Grow } from '@material-ui/core';
 import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
-
 import DialogTitle from '@material-ui/core/DialogTitle';
-import Slide from '@material-ui/core/Slide';
 
-import profileData from '../../utils/profileData';
+import Slide from '@material-ui/core/Slide';
+import CustomButton from '../../components/Button/Button'
+
+import portfolioData from '../../utils/portfolioData';
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -46,7 +47,7 @@ function Portfolio() {
                         value='all' 
                         className={tabValue === 'all'? 'customTabs_item active':'customTabs_item'} />
 
-                        {[...new Set(profileData.portfolio.map((item)=> item.tag))].map(
+                        {[...new Set(portfolioData.map((item)=> item.tag))].map(
                             (tag)=>(
                                 <Tab 
                                 label={tag} 
@@ -60,8 +61,8 @@ function Portfolio() {
                 
                 {/* projects */}
                 <Grid item xs={12}>
-                    <Grid container spacing={2}>
-                        {profileData.portfolio.map((project,index)=>(
+                    <Grid container spacing={3}>
+                        {portfolioData.map((project,index)=>(
                             <>
                                 {tabValue === project.tag || tabValue === 'all' ? (
                                     <Grid item lg={4} md={6} sm={12} xs={12}>
@@ -70,8 +71,8 @@ function Portfolio() {
                                                 <CardActionArea>
                                                     <CardMedia className='customCard_image' image={project.image} title={project.title}/>
                                                     <CardContent>
-                                                        <Typography className='customCard_title'>{project.title}</Typography>
-                                                        <Typography className='customCard_description' variant='body2'>{project.description}</Typography>
+                                                        <Typography className='customCard_title' variant='subtitle2'>{project.title}</Typography>
+                                                        {/* <Typography className='customCard_description' variant='body2'>{project.description}</Typography> */}
                                                     </CardContent>
                                                 </CardActionArea>
                                             </Card>
@@ -95,7 +96,11 @@ function Portfolio() {
                     </DialogContent>
                     <DialogActions className='projectDialog_links'>
                         {projectDialog?.links?.map((link,index) => (
-                            <a href={link.link} className='projectDialog_link' key={index}>{link.icon}</a>
+                            // <a href={link.link} className='projectDialog_link' key={index}>{link.icon}</a>
+                            <CustomButton text={link.name} 
+                            key={index} 
+                            icon={link.icon}
+                            link={link.link}/>
                         ))}
                     </DialogActions>
                 </Dialog>

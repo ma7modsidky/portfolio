@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
 }}));
 
 
-export default function CustomButton({text, icon, click}) {
+export default function CustomButton({text, icon, click, link}) {
     const classes = useStyles();
     return (
        <Button
@@ -19,7 +19,9 @@ export default function CustomButton({text, icon, click}) {
         startIcon={icon}
         onClick={click}
       >
-        {text}
+      {link? <a href={link} target="_blank" rel="noreferrer">{text}</a> : text }  
+      
+       
       </Button>
     )
 }

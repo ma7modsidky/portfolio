@@ -19,21 +19,20 @@
 
 .customCard {
     height: auto;
-    // max-width: 350px;
-    // min-width: 250px;
     width: 100%;
     border-radius: 5px;
     overflow: hidden;
     text-align: center;
 
     &_image {
-        height: 140px !important;
-        width: auto;
+        min-height: 200px !important;
+        // width: auto;
     }
 
     &_title {
-        font-weight: 600;
-        
+        text-transform: capitalize;
+        font-weight: 600 !important;
+        color: var(--grey);
     }
     &_description {
         padding: 0.5rem 0;
@@ -52,11 +51,12 @@
 
     &_title {
         text-align: center;
+        text-transform: uppercase;
     }
     &_image {
         width: 100%;
-        max-height: 300px;
-        object-fit: cover;
+        max-height: 400px;
+        object-fit: contain;
         object-position: center center;
     }
     &_description {
@@ -69,7 +69,10 @@
         align-items: center;
     }
 
-    &_link{
-        padding: 1rem;
+    button{
+        background-color: var(--main-color) !important;
+        a {
+            color: black !important;
+        }    
     }
 }
