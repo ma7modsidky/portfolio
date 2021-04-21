@@ -6,16 +6,17 @@ import easybank from '../assets/images/projects/easybank.png';
 import loopstudios from '../assets/images/projects/loopstudios.png';
 import pricing from '../assets/images/projects/pricing.png';
 import portfoliosite from '../assets/images/projects/portfoliosite.png';
+import ecommerce from '../assets/images/projects/ecommerce.png';
 
 const portfolioData = [
         {
-            tag:'react',
-            title:'project1',
-            image: p1,
-            description:'this is project 1 description',
+            tag:'django',
+            title:'full ecommerce site',
+            image: ecommerce,
+            description:'online shop site created with django3 and template engine',
             links:[
-                {link:'https://www.google.com.eg/', icon:<FacebookIcon />},
-                {link:'https://www.google.com.eg/', icon:<GitHubIcon />},
+                {link:'http://ma7modsidky.pythonanywhere.com/en/',},
+                {link:'https://github.com/ma7modsidky/Ecommerce_Django', icon:<GitHubIcon />},
             ]
         },
         {
