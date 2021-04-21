@@ -1,6 +1,4 @@
-import FacebookIcon from '@material-ui/icons/Facebook';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import p1 from '../assets/images/projects/placeholder.png';
 //projects photos
 import easybank from '../assets/images/projects/easybank.png';
 import loopstudios from '../assets/images/projects/loopstudios.png';
