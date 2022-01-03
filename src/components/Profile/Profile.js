@@ -6,6 +6,7 @@ import profileData from '../../utils/profileData'
 import CustomButton from '../Button/Button'
 import PermIdentityIcon from '@material-ui/icons/PermIdentity';
 import GetAppIcon from '@material-ui/icons/GetApp';
+import cv from '../../assets/cv.pdf'
 
 function Profile() {
     return (
@@ -30,7 +31,7 @@ function Profile() {
                 </div>
             </div>
 
-            <CustomButton text='Download CV' icon={<GetAppIcon/>}/>
+            <CustomButton text='Download CV' icon={<GetAppIcon/>} link={cv}/>
         </div>
     )
 }

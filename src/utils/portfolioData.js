@@ -5,16 +5,37 @@ import loopstudios from '../assets/images/projects/loopstudios.png';
 import pricing from '../assets/images/projects/pricing.png';
 import portfoliosite from '../assets/images/projects/portfoliosite.png';
 import ecommerce from '../assets/images/projects/ecommerce.png';
-
+import realstate from '../assets/images/projects/realstate.png';
+import blog from '../assets/images/projects/blog.jpeg';
 const portfolioData = [
+        {
+            tag:'react',
+            title:'Blog web application with react and django rest framework',
+            image: blog,
+            description:'Blog web application with react and django rest framework',
+            links:[
+                {name:'live preview', link:'https://blog-react-frontend-ma7modsidky.vercel.app',},
+                {name:'Github', link:'https://github.com/ma7modsidky/BlogApi_DjangoRestFramework/', icon:<GitHubIcon />},
+            ]
+        },
         {
             tag:'django',
             title:'full ecommerce site',
             image: ecommerce,
             description:'online shop site created with django3 and template engine',
             links:[
-                {name:'live preview', link:'http://ma7modsidky.pythonanywhere.com/en/',},
+                {name:'live preview', link:'http://shopdjango2021.pythonanywhere.com',},
                 {name:'Github', link:'https://github.com/ma7modsidky/Ecommerce_Django', icon:<GitHubIcon />},
+            ]
+        },
+        {
+            tag:'django',
+            title:'Real state website',
+            image: realstate,
+            description:'Real state website using django, jquer, html and scss',
+            links:[
+                {name:'live preview', link:'https://www.eastavenue.co/en/',},
+                {name:'Github', link:'https://github.com/ma7modsidky/east_avenue/', icon:<GitHubIcon />},
             ]
         },
         {
