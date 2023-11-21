@@ -1,0 +1,78 @@
+.MuiTabs-flexContainer{
+    flex-wrap: wrap !important;
+}
+.customTabs {
+    &_item{
+        
+        padding: 0.5rem 0.5rem !important;
+        min-width: 0 !important;
+        margin-right: 0.5rem !important;
+        font-size: 0.9rem !important;
+        font-weight: 600 !important;
+
+        &.active {
+            color: var(--main-color) !important;
+        }
+    }
+}
+
+
+.customCard {
+    height: auto;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+
+    &_image {
+        min-height: 200px !important;
+        // width: auto;
+    }
+
+    &_title {
+        text-transform: capitalize;
+        font-weight: 600 !important;
+        color: var(--grey);
+    }
+    &_description {
+        padding: 0.5rem 0;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        /* number of lines to show */
+        -webkit-box-orient: vertical;
+    }
+}
+
+.projectDialog{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &_title {
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &_image {
+        width: 100%;
+        max-height: 400px;
+        object-fit: contain;
+        object-position: center center;
+    }
+    &_description {
+        margin-top: 1rem;
+        text-align: center;
+    }
+    &_links {
+        display: flex;
+        justify-content: center !important;
+        align-items: center;
+    }
+
+    button{
+        background-color: var(--main-color) !important;
+        a {
+            color: black !important;
+        }    
+    }
+}

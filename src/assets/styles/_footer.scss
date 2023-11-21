@@ -1,0 +1,15 @@
+.footer{
+    background-color: rgb(30, 30, 30);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 4.5rem;
+    border-radius: 5px;
+    padding: 0 1rem;
+    font-weight: 600;
+
+    a{
+        color: var(--main-color);
+    }
+}
