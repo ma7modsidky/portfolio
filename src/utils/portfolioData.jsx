@@ -13,16 +13,18 @@ const portfolioData = [
             title:'Blog web application with react and django rest framework',
             image: blog,
             description:'Blog web application with react and django rest framework',
+            details: ['Backend application built with django rest framework, SQL database', 'Frontend application with react, styling with SCSS ','User Registeration and Login - jwt token authentication, Profile and user\'s posts and comments management ', 'Nested Categories and subcategories','Rich text posts and comments','Responsive layout and simple design'] ,
             links:[
-                {name:'live preview', link:'https://blog-react-frontend-ma7modsidky.vercel.app',},
-                {name:'Github', link:'https://github.com/ma7modsidky/BlogApi_DjangoRestFramework/', icon:<GitHubIcon />},
+                {name:'live preview', link:'https://vital-blog-frontend.vercel.app/',},
+                {name:'Github', link:'https://github.com/ma7modsidky/vital_blog_frontend/', icon:<GitHubIcon />},
             ]
         },
         {
             tag:'django',
             title:'full ecommerce site',
             image: ecommerce,
-            description:'online shop site created with django3 and template engine',
+            description:'online shop website created with django3 and template engine',
+            details: ['Backend application built with django, SQL database', 'Django template enging, styling with SCSS ','User Registeration and Login - session  authentication','Session shopping cart','Multi Language Arabic / English','Nested Categories and subcategories','Responsive layout and simple design'] ,
             links:[
                 {name:'live preview', link:'http://shopdjango2021.pythonanywhere.com',},
                 {name:'Github', link:'https://github.com/ma7modsidky/Ecommerce_Django', icon:<GitHubIcon />},
@@ -33,8 +35,9 @@ const portfolioData = [
             title:'Real state website',
             image: realstate,
             description:'Real state website using django, jquer, html and scss',
+            details: ['Backend application built with django, SQL database', 'Frontend Django template enging, styling with SCSS ','User Registeration and Login - session  authentication','Search and Filter Functionality with (type/price/area/bedrooms)','Multi Language Arabic / English','multiple project and unit types','Responsive layout and simple design'] ,
             links:[
-                {name:'live preview', link:'https://www.eastavenue.co/en/',},
+                {name:'live preview', link:'http://eastavenue.pythonanywhere.com/',},
                 {name:'Github', link:'https://github.com/ma7modsidky/east_avenue/', icon:<GitHubIcon />},
             ]
         },

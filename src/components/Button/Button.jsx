@@ -20,7 +20,8 @@ export default function CustomButton({text, icon, click, link}) {
         onClick={click}
         style= {{
           margin: '10px 10px',
-          fontWeight: 'Bold'
+          fontWeight: 'Bold',
+          color: 'black',
         }}
       >
       {link? <a href={link} target="_blank" rel="noreferrer">{text}</a> : text }  

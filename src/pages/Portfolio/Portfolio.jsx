@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import {forwardRef, useState} from 'react'
 import Grid from '@mui/material/Grid'
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
@@ -20,7 +20,7 @@ import CustomButton from '../../components/Button/Button'
 
 import portfolioData from '../../utils/portfolioData';
 
-const Transition = React.forwardRef(function Transition(props, ref) {
+const Transition = forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
 
@@ -65,7 +65,8 @@ function Portfolio() {
                 <Grid item xs={12}>
                     <Grid container spacing={3}>
                         {portfolioData.map((project,index)=>(
-                            <>
+                            // <div key={index}>
+                            <> 
                                 {tabValue === project.tag || tabValue === 'all' ? (
                                     <Grid item lg={4} md={6} sm={12} xs={12}>
                                         <Grow in timeout={1000}>
@@ -81,7 +82,8 @@ function Portfolio() {
                                         </Grow>
                                     </Grid>
                                 ) : null}
-                            </>                            
+                            </>
+                            // </div>                            
                         ))}
                     </Grid>
                 </Grid>
@@ -95,7 +97,16 @@ function Portfolio() {
                     <img src={projectDialog.image} alt="" className='projectDialog_image' width='100%' height='auto'/>
                     <DialogContent className='projectDialog_description'>
                         {projectDialog.description}
+                        <hr/>
+                        <ul>
+                        {projectDialog.details?.map((item,index) => (
+                            <li key={index} style={{textAlign: 'left'}}>{item}</li>
+                        ))}
+                        </ul>
+                        
                     </DialogContent>
+                    
+                    
                     <DialogActions className='projectDialog_links'>
                         {projectDialog?.links?.map((link,index) => (
                             // <a href={link.link} className='projectDialog_link' key={index}>{link.icon}</a>
