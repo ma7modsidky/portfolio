@@ -6,6 +6,7 @@ import pricing from '../assets/images/projects/pricing.png';
 import portfoliosite from '../assets/images/projects/portfoliosite.png';
 import ecommerce from '../assets/images/projects/ecommerce.png';
 import realstate from '../assets/images/projects/realstate.png';
+import realstate_react from '../assets/images/projects/real_estate_react.jpeg'
 import blog from '../assets/images/projects/blog.jpeg';
 const portfolioData = [
         {
@@ -17,6 +18,16 @@ const portfolioData = [
             links:[
                 {name:'live preview', link:'https://vital-blog-frontend.vercel.app/',},
                 {name:'Github', link:'https://github.com/ma7modsidky/vital_blog_frontend/', icon:<GitHubIcon />},
+            ]
+        },
+        {
+            tag:'react',
+            title:'Real Estate website with react',
+            image: realstate_react,
+            description:'Frontend only application website built with react js',
+            links:[
+                {name:'live preview', link:'https://react-real-estate-pink.vercel.app/',},
+                {name:'Github', link:'https://github.com/ma7modsidky/react_real_estate', icon:<GitHubIcon />},
             ]
         },
         {
