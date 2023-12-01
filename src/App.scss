@@ -27,6 +27,10 @@ a:any-link {
   color: black;
 }
 
+.no-margin {
+  margin: 0 !important;
+}
+
 @import 'assets/styles/_mixins.scss';
 @import 'assets/styles/_profile.scss';
 @import 'assets/styles/_timeline.scss';

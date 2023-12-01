@@ -37,7 +37,7 @@ const portfolioData = [
             description:'online shop website created with django3 and template engine',
             details: ['Backend application built with django, SQL database', 'Django template enging, styling with SCSS ','User Registeration and Login - session  authentication','Session shopping cart','Multi Language Arabic / English','Nested Categories and subcategories','Responsive layout and simple design'] ,
             links:[
-                {name:'live preview', link:'http://shopdjango2021.pythonanywhere.com',},
+                {name:'live preview', link:'http://shopdjango.pythonanywhere.com',},
                 {name:'Github', link:'https://github.com/ma7modsidky/Ecommerce_Django', icon:<GitHubIcon />},
             ]
         },

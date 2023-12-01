@@ -63,12 +63,11 @@ function Portfolio() {
                 
                 {/* projects */}
                 <Grid item xs={12}>
-                    <Grid container spacing={3}>
+                    <Grid container spacing={3} style={{display:'flex',justifyContent:'start'}}>
                         {portfolioData.map((project,index)=>(
-                            // <div key={index}>
                             <> 
                                 {tabValue === project.tag || tabValue === 'all' ? (
-                                    <Grid item lg={4} md={6} sm={12} xs={12}>
+                                    <Grid item lg={4} md={6} sm={12} xs={12} key={project.title} className='no-margin'>
                                         <Grow in timeout={1000}>
                                             <Card className='customCard' onClick={()=> setProjectDialog(project)} key={index}>
                                                 <CardActionArea>
@@ -83,7 +82,7 @@ function Portfolio() {
                                     </Grid>
                                 ) : null}
                             </>
-                            // </div>                            
+                     
                         ))}
                     </Grid>
                 </Grid>

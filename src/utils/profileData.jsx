@@ -24,15 +24,19 @@ import reactIcon from '@iconify/icons-cib/react';
 import mysqlIcon from '@iconify/icons-cib/mysql';
 import redisIcon from '@iconify/icons-cib/redis';
 import bxlBootstrap from '@iconify/icons-bx/bxl-bootstrap';
+import tailwindSolid from '@iconify/icons-teenyicons/tailwind-solid';
+import nginxIcon from '@iconify/icons-cib/nginx';
+import nodejsOutline from '@iconify/icons-teenyicons/nodejs-outline';
+import mongodbOutline from '@iconify/icons-teenyicons/mongodb-outline';
 
 
 
 const profileData = {
     name: 'Mahmoud Sidky',
-    title: 'Full Stack Web Developer',
+    title: 'Full Stack Web Developer / Software Engineer',
 
     birthDay: '1 January 1995',
-    email: 'ma7mod_a@live.com',
+    email: 'mahmoudsidky@outlook.com',
     address: 'Egypt, Cairo',
     phone: '+201111504980',
 
@@ -83,6 +87,17 @@ const profileData = {
     },
 
     skills: {
+        programming_languages: {
+            python:{
+                name:'python',
+                icon: <Icon icon={bxlPython} />,
+            },
+            js:{
+                name:'Javascript',
+                icon: <Icon icon={bxlJavascript} />,
+            },
+            
+        },
         frontend: {
             html: {
                 name:'html5',
@@ -92,10 +107,7 @@ const profileData = {
                 name:'css3',
                 icon: <Icon icon={bxlCss3} />,
             },
-            js:{
-                name:'Javascript',
-                icon: <Icon icon={bxlJavascript} />,
-            },
+            
             sass:{
                 name:'Sass',
                 icon: <Icon icon={sassAlt} />,
@@ -104,6 +116,10 @@ const profileData = {
                 name:'react',
                 icon: <Icon icon={reactIcon} />,
             },
+            tailwind:{
+                name:'tailwind',
+                icon: <Icon icon={tailwindSolid} />
+            },
             bootstap:{
                 name:'bootstrap',
                 icon: <Icon icon={bxlBootstrap} />,
@@ -111,13 +127,18 @@ const profileData = {
 
         },
         backend: {
-            python:{
-                name:'python',
-                icon: <Icon icon={bxlPython} />,
-            },
+            
             django:{
                 name:'django',
                 icon: <Icon icon={bxlDjango} />,
+            },
+            nodejs:{
+                name:'Node JS',
+                icon: <Icon icon={nodejsOutline} />,
+            },
+            mongo:{
+                name:'Mongo DB',
+                icon: <Icon icon={mongodbOutline} />,
             },
             Postgresql:{
                 name:'Postgresql',
@@ -130,7 +151,12 @@ const profileData = {
             redis:{
                 name:'redis',
                 icon: <Icon icon={redisIcon} />,
-            }
+            },
+            Nginx:{
+                name:'Nginx',
+                icon: <Icon icon={nginxIcon} />,
+            },
+
         }
     },
 

@@ -15,7 +15,6 @@
     "@iconify/icons-bx": "^1.2.6",
     "@iconify/icons-cib": "^1.2.4",
     "@iconify/icons-icomoon-free": "^1.2.3",
-    "@iconify/react": "^4.1.1",
     "@mui/icons-material": "^5.14.18",
     "@mui/lab": "^5.0.0-alpha.153",
     "@mui/material": "^5.14.18",
@@ -26,6 +25,8 @@
     "sass": "^1.69.5"
   },
   "devDependencies": {
+    "@iconify/icons-teenyicons": "^1.2.4",
+    "@iconify/react": "^4.1.1",
     "@types/react": "^18.2.37",
     "@types/react-dom": "^18.2.15",
     "@vitejs/plugin-react": "^4.2.0",

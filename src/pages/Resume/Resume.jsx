@@ -27,6 +27,15 @@ function Resume() {
                             </div>
                         ))}
                     </Grid>
+                    <Grid item xs={12} md={6} className='work'>
+                        <h4>Programming Languages</h4>
+                        {Object.keys(profileData.skills.programming_languages).map((key,index) => (
+                            <div className="skill_box" key={index}>
+                                {profileData.skills.programming_languages[key].icon}
+                                <span>{profileData.skills.programming_languages[key].name}</span> 
+                            </div>
+                        ))}
+                    </Grid>
                 </Grid>
             </div>
         </div>
