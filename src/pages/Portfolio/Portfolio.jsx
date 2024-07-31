@@ -15,6 +15,8 @@ import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogTitle from '@mui/material/DialogTitle';
 
+import TabPanel from './TabPanel';
+
 import Slide from '@mui/material/Slide';
 import CustomButton from '../../components/Button/Button'
 
@@ -27,7 +29,11 @@ const Transition = forwardRef(function Transition(props, ref) {
 function Portfolio() {
     const [tabValue, setTabValue] = useState('all')
     const [projectDialog, setProjectDialog] = useState(false)
-
+    const [tabIndex, setTabIndex] = useState(0)
+    const handleChange = (event, newValue) => {
+        setTabIndex(newValue);
+      };
+    
 
     return (
         <div>
@@ -86,22 +92,54 @@ function Portfolio() {
                         ))}
                     </Grid>
                 </Grid>
-                <Dialog 
+                <Dialog
+                
+                sx={{
+                    '& .MuiDialog-container': {
+                    width: '100%',
+                      '& .MuiPaper-root': {
+                        width: '100%', // Set your desired width here
+                         // Set your max width here
+                      },
+                    },
+                  }}
                 open={projectDialog} 
                 onClose={() => setProjectDialog(false)} 
                 TransitionComponent={Transition} 
                 keepMounted
                 className='projectDialog'>
                     <DialogTitle onClose={() => setProjectDialog(false)} className='projectDialog_title'> {projectDialog.title} </DialogTitle>
-                    <img src={projectDialog.image} alt="" className='projectDialog_image' width='100%' height='auto'/>
-                    <DialogContent className='projectDialog_description'>
-                        {projectDialog.description}
+                    {/* <img src={projectDialog.image} alt="" className='projectDialog_image' width='100%' height='auto'/> */}
+                    <DialogContent className='projectDialog_description' width={80}>
+                        {/* {projectDialog.description}
                         <hr/>
                         <ul>
                         {projectDialog.details?.map((item,index) => (
                             <li key={index} style={{textAlign: 'left'}}>{item}</li>
                         ))}
-                        </ul>
+                        </ul> */}
+
+                    <Tabs value={tabIndex} onChange={handleChange} aria-label="tabs" variant="fullWidth" sx={{
+                    '& .MuiTabs-flexContainer ': {
+                    justifyContent: 'center',
+                    },
+                  }}>
+                        <Tab label="Description" id="tab-0" aria-controls="tabpanel-0"   />
+                        <Tab label="Stack" id="tab-1" aria-controls="tabpanel-1" />
+                        <Tab label="Images" id="tab-2" aria-controls="tabpanel-2" />
+                    </Tabs>
+                    <TabPanel value={tabIndex} index={0}>
+                        <div>{projectDialog.description}</div>
+                    </TabPanel>
+                    <TabPanel value={tabIndex} index={1}>
+                        <div>Content for Tab 2</div>
+                    </TabPanel>
+                    <TabPanel value={tabIndex} index={2}>
+                        <div><img src={projectDialog.image} alt="" className='projectDialog_image' width='100%' height='auto'/></div>
+                    </TabPanel>
+
+
+
                         
                     </DialogContent>
                     
