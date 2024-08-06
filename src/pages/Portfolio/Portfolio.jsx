@@ -100,8 +100,16 @@ function Portfolio() {
                       '& .MuiPaper-root': {
                         width: '100%', // Set your desired width here
                          // Set your max width here
+                        height: '74vh', //
+                        
                       },
                     },
+                    '& .MuiBox-root': {
+                        
+                    },
+                    '& .MuiDialogContent-root': {
+                    }
+
                   }}
                 open={projectDialog} 
                 onClose={() => setProjectDialog(false)} 
@@ -132,7 +140,12 @@ function Portfolio() {
                         <div>{projectDialog.description}</div>
                     </TabPanel>
                     <TabPanel value={tabIndex} index={1}>
-                        <div>Content for Tab 2</div>
+
+                        <ul>{projectDialog?.stack?.map((name,index) => (
+                            // <a href={link.link} className='projectDialog_link' key={index}>{link.icon}</a>
+                            <li key={index}>{name}</li>
+                        ))}
+                        </ul>
                     </TabPanel>
                     <TabPanel value={tabIndex} index={2}>
                         <div><img src={projectDialog.image} alt="" className='projectDialog_image' width='100%' height='auto'/></div>

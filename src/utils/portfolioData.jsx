@@ -18,7 +18,9 @@ const portfolioData = [
             links:[
                 {name:'live preview', link:'https://vital-blog-frontend.vercel.app/',},
                 {name:'Github', link:'https://github.com/ma7modsidky/vital_blog_frontend/', icon:<GitHubIcon />},
-            ]
+            ],
+            stack: ['react', 'django', 'django rest framework', 'scss']
+
         },
         {
             tag:'react',

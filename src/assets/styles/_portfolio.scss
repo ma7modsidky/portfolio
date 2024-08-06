@@ -43,7 +43,9 @@
         -webkit-box-orient: vertical;
     }
 }
-
+#tabpanel-2 {
+    overflow-y: auto;
+}
 .projectDialog{
     display: flex;
     align-items: center;
@@ -54,9 +56,10 @@
         font-weight: bold;
         // text-transform: uppercase;
     }
+
     &_image {
         width: 100%;
-        max-height: 400px;
+        
         object-fit: contain;
         object-position: center center;
     }
