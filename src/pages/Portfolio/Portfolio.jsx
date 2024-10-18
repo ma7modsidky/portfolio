@@ -138,6 +138,13 @@ function Portfolio() {
                     </Tabs>
                     <TabPanel value={tabIndex} index={0}>
                         <div>{projectDialog.description}</div>
+                        <hr />
+                        <h3>Features</h3>
+                        <div><ul>{projectDialog?.details?.map((name,index) => (
+                            // <a href={link.link} className='projectDialog_link' key={index}>{link.icon}</a>
+                            <li key={index}>{name}</li>
+                        ))}
+                        </ul></div>
                     </TabPanel>
                     <TabPanel value={tabIndex} index={1}>
 

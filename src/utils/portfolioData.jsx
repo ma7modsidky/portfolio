@@ -8,18 +8,20 @@ import ecommerce from '../assets/images/projects/ecommerce.png';
 import realstate from '../assets/images/projects/realstate.png';
 import realstate_react from '../assets/images/projects/real_estate_react.jpeg'
 import blog from '../assets/images/projects/blog.jpeg';
+import crm from '../assets/images/projects/crm.jpeg';
 const portfolioData = [
         {
             tag:'react',
-            title:'Blog web application with react and django rest framework',
+            title:'Blog web application [React/DRF]',
             image: blog,
-            description:'Blog web application with react and django rest framework',
-            details: ['Backend application built with django rest framework, SQL database', 'Frontend application with react, styling with SCSS ','User Registeration and Login - jwt token authentication, Profile and user\'s posts and comments management ', 'Nested Categories and subcategories','Rich text posts and comments','Responsive layout and simple design'] ,
+            description:'Blog Web Application, Frontend built with react js and styled with SCSS no css libararies were used, Backend Rest Api with Django rest framework, SQL Database',
+            details: ['User Registeration and Login' , 'JWT token authentication', 
+                'Profile and user\'s posts and comments management ', 'Nested Categories and subcategories','Rich text posts and comments','Responsive layout and simple design'] ,
             links:[
                 {name:'live preview', link:'https://vital-blog-frontend.vercel.app/',},
                 {name:'Github', link:'https://github.com/ma7modsidky/vital_blog_frontend/', icon:<GitHubIcon />},
             ],
-            stack: ['react', 'django', 'django rest framework', 'scss']
+            stack: ['Frontend: React JS', 'Backend: Django', 'REST API: Django Rest Framework', 'Styling: SCSS']
 
         },
         {
@@ -30,6 +32,17 @@ const portfolioData = [
             links:[
                 {name:'live preview', link:'https://react-real-estate-pink.vercel.app/',},
                 {name:'Github', link:'https://github.com/ma7modsidky/react_real_estate', icon:<GitHubIcon />},
+            ]
+        },
+        {
+            tag:'django',
+            title:'CRM Web Application',
+            image: crm,
+            description:'CRM Web Application built with Django',
+            details: ['Backend application built with django, SQL database', 'Django template enging, styling with SCSS , Bootstrab ','User Registeration and Login - session  authentication','Responsive layout and simple design'] ,
+            links:[
+                {name:'live preview', link:'http://crmdjango.pythonanywhere.com',},
+                {name:'Github', link:'https://github.com/ma7modsidky/crm_django', icon:<GitHubIcon />},
             ]
         },
         {
