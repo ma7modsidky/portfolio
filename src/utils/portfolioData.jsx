@@ -21,7 +21,7 @@ const portfolioData = [
                 {name:'live preview', link:'https://vital-blog-frontend.vercel.app/',},
                 {name:'Github', link:'https://github.com/ma7modsidky/vital_blog_frontend/', icon:<GitHubIcon />},
             ],
-            stack: ['Frontend: React JS', 'Backend: Django', 'REST API: Django Rest Framework', 'Styling: SCSS']
+            stack: ['Frontend: React JS','Styling: SCSS','Backend: Django','REST API: Django Rest Framework','Database: SQlite']
 
         },
         {
