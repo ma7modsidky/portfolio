@@ -9,6 +9,7 @@ import realstate from '../assets/images/projects/realstate.png';
 import realstate_react from '../assets/images/projects/real_estate_react.jpeg'
 import blog from '../assets/images/projects/blog.jpeg';
 import crm from '../assets/images/projects/crm.jpeg';
+import nexus from '../assets/images/projects/nexus.jpeg'
 const portfolioData = [
         {
             tag:'react',
@@ -25,6 +26,17 @@ const portfolioData = [
 
         },
         {
+            tag:'next',
+            title:'Outsourcing Company Website',
+            image: nexus,
+            description:'Company website built with Next.js and styled with Tailwind',
+            links:[
+                {name:'live preview', link:'https://nexussoloutions.com/',},
+                {name:'Github', link:'', icon:<GitHubIcon />},
+            ],
+            stack: ['Frontend: Next JS','Styling: Tailwind','Framer motion']
+        },
+        {
             tag:'react',
             title:'Real Estate website with react',
             image: realstate_react,
@@ -32,7 +44,8 @@ const portfolioData = [
             links:[
                 {name:'live preview', link:'https://react-real-estate-pink.vercel.app/',},
                 {name:'Github', link:'https://github.com/ma7modsidky/react_real_estate', icon:<GitHubIcon />},
-            ]
+            ],
+            stack: ['Frontend: React JS','Styling: SCSS','Framer motion']
         },
         {
             tag:'django',
@@ -47,7 +60,7 @@ const portfolioData = [
         },
         {
             tag:'django',
-            title:'full ecommerce site',
+            title:'Full Stack Ecommerce website',
             image: ecommerce,
             description:'online shop website created with django3 and template engine',
             details: ['Backend application built with django, SQL database', 'Django template enging, styling with SCSS ','User Registeration and Login - session  authentication','Session shopping cart','Multi Language Arabic / English','Nested Categories and subcategories','Responsive layout and simple design'] ,
@@ -95,6 +108,16 @@ const portfolioData = [
             links:[
                 {name:'live preview', link:'https://loopstudios-landing-page-ma7modsidky.vercel.app/',},
                 {name:'Github', link:'https://github.com/ma7modsidky/loopstudios_landing_page', icon:<GitHubIcon />},
+            ]
+        },
+        {
+            tag:'html&css',
+            title:'Dental Clinic landing page',
+            image: loopstudios,
+            description:'Dental Clinic landing page styled by Tailwind ',
+            links:[
+                {name:'live preview', link:'https://ma7modsidky.github.io/juzur-dental-clinic/src/index.html',},
+                {name:'Github', link:'https://github.com/ma7modsidky/juzur-dental-clinic/', icon:<GitHubIcon />},
             ]
         },
         {

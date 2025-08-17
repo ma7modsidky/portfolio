@@ -1,5 +1,5 @@
 import {Typography } from '@mui/material';
-import myImage from '../../assets/images/profile.jpg'
+import myImage from '../../assets/images/profile.png'
 import CustomTimeline from '../Timeline/Timeline'
 import profileData from '../../utils/profileData'
 import CustomButton from '../Button/Button'

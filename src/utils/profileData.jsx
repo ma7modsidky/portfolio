@@ -42,12 +42,12 @@ const profileData = {
 
     socials: {
         Facebook: {
-            link: 'https://www.facebook.com/Ma7modAlaa',
+            link: '',
             text: 'facebook',
             icon: <FacebookIcon />
         },
         Twitter: {
-            link: 'https://www.twitter.com/mahmoudsidky5',
+            link: '',
             text: 'Twitter',
             icon: <TwitterIcon />
         },
