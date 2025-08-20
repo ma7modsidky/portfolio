@@ -9,25 +9,20 @@ import Home from './pages/Home/Home'
 import Contact from './pages/Contact/Contact'
 import SettingsBox from './components/SettingsBox/SettingsBox';
 
-import {BrowserRouter as Router , Switch , Route} from 'react-router-dom'
-
-
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import './App.scss';
 
-
 function App() {
-
-
   return (
-    <div className="App">
-      <SettingsBox/>
-      <Container>
-        <Grid container spacing={3}>
-          <Grid item xs={12} sm={8} md={4} lg={3} >
-            <Profile />
-          </Grid>
-          <Grid  item xs={12} sm={12} md={8} lg={9} >
-            <Router>
+    <Router>
+      <div className="App">
+        <SettingsBox/>
+        <Container>
+          <Grid container spacing={3}>
+            <Grid item xs={12} sm={12} md={4} lg={3}>
+              <Profile />
+            </Grid>
+            <Grid item xs={12} sm={12} md={8} lg={9}>
               <Header className='header' />
               <div className='main container_shadow'>
                 <Switch>
@@ -37,12 +32,12 @@ function App() {
                   <Route path='/contact'><Contact /></Route>
                 </Switch>
               </div>
-            </Router>
-            <Footer />
+              <Footer />
+            </Grid>
           </Grid>
-        </Grid>
-      </Container>
-    </div>
+        </Container>
+      </div>
+    </Router>
   );
 }
 

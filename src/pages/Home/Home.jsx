@@ -5,9 +5,8 @@ function Home() {
         <div className="home">
             <div className='about_me'>
                 <h3 className='home_title'>About Me</h3>
-                <p>Hi There I'm Mahmoud , I'm a full stack web developer with 2 years of experience.</p>
-                <p>I worked as a doctor before, but I found my passion and love for coding and web development, so I decided to switch my career and do the most thing I'm good at </p>
-                <p>I'm glad to work with you in the future and deliver you the best work you want</p>
+                <p>Full Stack Developer with 2+ years of expertise in modern web development. My unique background in medicine brings exceptional problem-solving skills, attention to detail, and user-centric thinking to every project. I combine technical precision with creative solutions to deliver exceptional digital experiences that drive results.</p>
+                
             </div>
             <div className='my_service'>
                 <h3 className='home_title'>My Services</h3>
